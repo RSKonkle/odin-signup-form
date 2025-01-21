@@ -124,6 +124,11 @@ form legend {
     cursor: pointer;
 }
 
-.password:invalid {
+#user_pass:invalid {
     border: 1px solid red;
 }
+
+#user_pass:focus:invalid {
+    outline: none; /* Removes the default outline when focused and invalid */
+    box-shadow: 0 0 5px red; /* Adds a red glow to emphasize the error */
+  }
