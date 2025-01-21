@@ -1,1 +1,129 @@
 /* STYLE SHEET */
+
+/*======================================
+    MAIN CONTENT SECTION
+======================================*/
+body {
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.page-wrap {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+/*======================================
+    SPLASH IMAGE SECTION
+======================================*/
+.splash-wrap {
+    width: 40%;
+    background-image: url("./images/form-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: "norseBold";  /* Name your font family */
+    src: url("./fonts/Norse-Bold.otf") format("truetype"); /* Path to your font file */
+}
+
+.splash-overlay {
+    margin-top: 300px;
+    background-color: rgb(0, 0, 0, 0.6);
+    color: white;
+    font-family: norseBold;
+    height: 120px;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.splash-overlay img {
+    height: 100px;
+    padding: 0 12px;
+}
+/*======================================
+    CONTENT SECTION - FORM, TEXT, ETC.
+======================================*/
+.content-wrap {
+    height: 60%;
+    width: 60%;
+}
+
+.content-wrap-top {
+    padding: 60px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.6);
+}
+
+.content-wrap-top p {
+    max-width: 60%;
+    font-size: 24px;
+}
+
+.content-wrap-top p + p {
+    margin: 12px 0 48px;
+}
+
+form {
+    max-width: 60%;
+    margin-top: 60px;
+}
+
+form legend {
+    font-size: 24px;
+}
+
+.form-row-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0 12px;
+}
+
+.form-solo-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-solo-flex label {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #5f5f5f;
+    padding-bottom: 4px;
+}
+
+.form-solo-flex input {
+    font-size: 24px;
+    max-width: 200px;
+}
+
+.content-wrap-bottom {
+    padding: 20px 60px
+}
+
+.content-wrap-bottom button {
+    background-color: rgb(55, 104, 55);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 24px;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.sign-in {
+    color: rgb(55, 104, 55);
+    text-shadow: 1px 3px 8px rgb(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.password:invalid {
+    border: 1px solid red;
+}

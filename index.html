@@ -4,8 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAKE Sign-Up</title>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    
+    <div class="page-wrap">
+        <div class="splash-wrap">
+            <div class="splash-overlay"><img src="./images/odin-lined.png">ODIN</div>
+        </div>
+
+        <div class="content-wrap">
+            <div class="content-wrap-top">
+                <p>
+                    This is not a real online service! You know you need something like
+                    this in your life to help you realize your deepest dreams.
+                </p>
+                <p>
+                    Sign up now to get started.
+                </p>
+                <p>
+                    You <em>know</em> you want to.
+                </p>
+                <!-- FORM START -->
+                <form>
+                    <legend>Let's do this!</legend>
+                    <div class="form-row-flex">
+                        <div class="form-solo-flex">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" placeholder="Thor"/>
+                        </div>
+                        <div class="form-solo-flex">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" placeholder="Odinson"/>
+                        </div>
+                    </div>
+                    <div class="form-row-flex">
+                        <div class="form-solo-flex">
+                            <label for="user_email">EMAIL</label>
+                            <input type="email" id="user_email"/>
+                        </div>
+                        <div class="form-solo-flex">
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="number" id="phone_number"/>
+                        </div>
+                    </div>
+                    <div class="form-row-flex">
+                        <div class="form-solo-flex">
+                            <label for="user_pass">PASSWORD</label>
+                            <input type="password" id="user_pass"/>
+                        </div>
+                        <div class="form-solo-flex">
+                            <label for="confirm_pass">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm_pass" required>
+                        </div>
+                    </div>
+                </form>
+                <!-- FORM END -->
+            </div>
+            <div class="content-wrap-bottom">
+                <button type="submit">Create Account</button>
+                <p>Already have an account?</p>
+                <p class="sign-in">Click here to sign in!</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
